@@ -1,5 +1,5 @@
 // ─────────────────────────────────────────────────────
-// @termui/ui — Tests for MultiSelect component
+// @termuijs/ui — Tests for MultiSelect component
 // ─────────────────────────────────────────────────────
 
 import { describe, it, expect, vi } from 'vitest';

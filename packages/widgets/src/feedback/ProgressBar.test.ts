@@ -1,5 +1,5 @@
 // ─────────────────────────────────────────────────────
-// @termui/widgets — Tests for ProgressBar widget
+// @termuijs/widgets — Tests for ProgressBar widget
 // ─────────────────────────────────────────────────────
 
 import { describe, it, expect } from 'vitest';

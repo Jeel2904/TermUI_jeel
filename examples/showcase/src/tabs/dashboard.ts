@@ -2,9 +2,9 @@
 // Dashboard Tab — Gauges, Table, ProgressBar, Spinner
 // ─────────────────────────────────────────────────────
 
-import { Widget } from '@termui/widgets';
-import { Box, Text, ProgressBar, Spinner, Table, Sparkline, StatusIndicator } from '@termui/widgets';
-import type { Screen } from '@termui/core';
+import { Widget } from '@termuijs/widgets';
+import { Box, Text, ProgressBar, Spinner, Table, Sparkline, StatusIndicator } from '@termuijs/widgets';
+import type { Screen } from '@termuijs/core';
 
 export class DashboardTab extends Widget {
     private _cpuGauge: ProgressBar;

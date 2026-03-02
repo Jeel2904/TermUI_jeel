@@ -1,5 +1,5 @@
 // ─────────────────────────────────────────────────────
-// @termui/tss — Tests for Tokenizer
+// @termuijs/tss — Tests for Tokenizer
 // ─────────────────────────────────────────────────────
 
 import { describe, it, expect } from 'vitest';

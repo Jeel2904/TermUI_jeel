@@ -1,10 +1,10 @@
 // ─────────────────────────────────────────────────────
-// @termui/ui — Tests for Tabs component
+// @termuijs/ui — Tests for Tabs component
 // ─────────────────────────────────────────────────────
 
 import { describe, it, expect } from 'vitest';
 import { Tabs } from './Tabs.js';
-import { Box } from '@termui/widgets';
+import { Box } from '@termuijs/widgets';
 
 const makeTabs = () => new Tabs([
     { label: 'Home', content: new Box() },

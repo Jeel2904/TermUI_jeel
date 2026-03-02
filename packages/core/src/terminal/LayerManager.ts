@@ -1,5 +1,5 @@
 // ─────────────────────────────────────────────────────
-// @termui/core — Layer Manager for overlay rendering
+// @termuijs/core — Layer Manager for overlay rendering
 // ─────────────────────────────────────────────────────
 
 import type { Cell } from './Screen.js';

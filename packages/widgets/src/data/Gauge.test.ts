@@ -1,5 +1,5 @@
 // ─────────────────────────────────────────────────────
-// @termui/widgets — Tests for Gauge widget
+// @termuijs/widgets — Tests for Gauge widget
 // ─────────────────────────────────────────────────────
 
 import { describe, it, expect } from 'vitest';

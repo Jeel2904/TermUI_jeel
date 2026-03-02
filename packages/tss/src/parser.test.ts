@@ -1,5 +1,5 @@
 // ─────────────────────────────────────────────────────
-// @termui/tss — Tests for Parser
+// @termuijs/tss — Tests for Parser
 // ─────────────────────────────────────────────────────
 
 import { describe, it, expect } from 'vitest';

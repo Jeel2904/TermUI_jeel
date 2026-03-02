@@ -1,5 +1,5 @@
 // ─────────────────────────────────────────────────────
-// @termui/motion — Tests for Transitions (easing functions)
+// @termuijs/motion — Tests for Transitions (easing functions)
 // ─────────────────────────────────────────────────────
 
 import { describe, it, expect } from 'vitest';

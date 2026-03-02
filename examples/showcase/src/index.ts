@@ -5,12 +5,12 @@
 // Run with:  npx tsx src/index.ts
 //
 // Demonstrates all TermUI packages:
-//   @termui/core      — App lifecycle, Screen, Input
-//   @termui/widgets   — Box, Text, Table, Gauge, Sparkline
-//   @termui/ui        — Modal, Select, Tree, Divider, Toast
-//   @termui/tss       — Theme engine, 6 built-in themes
-//   @termui/motion    — Spring physics, transitions
-//   @termui/dev-server — DevTools panel, perf metrics
+//   @termuijs/core      — App lifecycle, Screen, Input
+//   @termuijs/widgets   — Box, Text, Table, Gauge, Sparkline
+//   @termuijs/ui        — Modal, Select, Tree, Divider, Toast
+//   @termuijs/tss       — Theme engine, 6 built-in themes
+//   @termuijs/motion    — Spring physics, transitions
+//   @termuijs/dev-server — DevTools panel, perf metrics
 //
 // Controls:
 //   1-5       Switch tabs
@@ -19,9 +19,9 @@
 //   q/Ctrl+C  Quit
 //
 
-import { App } from '@termui/core';
-import { Box, Text, Widget } from '@termui/widgets';
-import type { Screen, KeyEvent } from '@termui/core';
+import { App } from '@termuijs/core';
+import { Box, Text, Widget } from '@termuijs/widgets';
+import type { Screen, KeyEvent } from '@termuijs/core';
 import * as fs from 'node:fs';
 
 import { DashboardTab } from './tabs/dashboard.js';

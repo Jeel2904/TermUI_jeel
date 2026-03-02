@@ -1,5 +1,5 @@
 // ─────────────────────────────────────────────────────
-// @termui/core — Application lifecycle manager
+// @termuijs/core — Application lifecycle manager
 // ─────────────────────────────────────────────────────
 
 import { Terminal, type TerminalOptions } from '../terminal/Terminal.js';
@@ -29,7 +29,7 @@ export interface AppOptions extends TerminalOptions {
 
 /**
  * Widget interface that App expects for the root widget.
- * This is the minimum contract — the full Widget class in @termui/widgets extends this.
+ * This is the minimum contract — the full Widget class in @termuijs/widgets extends this.
  */
 export interface RootWidget {
     id: string;

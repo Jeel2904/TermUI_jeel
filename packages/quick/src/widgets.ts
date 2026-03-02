@@ -1,8 +1,8 @@
 // ─────────────────────────────────────────────────────
-// @termui/quick — Shorthand widget constructors
+// @termuijs/quick — Shorthand widget constructors
 // ─────────────────────────────────────────────────────
 
-import type { Style, Color } from '@termui/core';
+import type { Style, Color } from '@termuijs/core';
 import {
     Text,
     Table,
@@ -13,7 +13,7 @@ import {
     StatusIndicator as StatusWidget,
     LogView as LogViewWidget,
     Widget,
-} from '@termui/widgets';
+} from '@termuijs/widgets';
 import type { Reactive } from './reactive.js';
 import { resolve } from './reactive.js';
 

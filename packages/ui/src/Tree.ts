@@ -1,6 +1,6 @@
 // Tree — expandable/collapsible tree view
-import { Widget } from '@termui/widgets';
-import { type Style, type Screen, mergeStyles, defaultStyle, styleToCellAttrs } from '@termui/core';
+import { Widget } from '@termuijs/widgets';
+import { type Style, type Screen, mergeStyles, defaultStyle, styleToCellAttrs } from '@termuijs/core';
 
 export interface TreeNode { label: string; children?: TreeNode[]; expanded?: boolean; icon?: string; }
 export interface TreeOptions { activeColor?: Style['fg']; onSelect?: (node: TreeNode, path: number[]) => void; }

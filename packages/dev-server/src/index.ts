@@ -1,4 +1,4 @@
-// @termui/dev-server — Hot-Reload Dev Server
+// @termuijs/dev-server — Hot-Reload Dev Server
 export { DevServer } from './server.js';
 export type { DevServerOptions } from './server.js';
 export { FileWatcher } from './watcher.js';

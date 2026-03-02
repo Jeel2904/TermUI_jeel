@@ -1,5 +1,5 @@
 // ─────────────────────────────────────────────────────
-// @termui/core — Style definition and merging
+// @termuijs/core — Style definition and merging
 // ─────────────────────────────────────────────────────
 
 import type { Color } from './Color.js';

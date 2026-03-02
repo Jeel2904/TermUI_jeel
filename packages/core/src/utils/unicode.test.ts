@@ -1,5 +1,5 @@
 // ─────────────────────────────────────────────────────
-// @termui/core — Tests for unicode utilities
+// @termuijs/core — Tests for unicode utilities
 // ─────────────────────────────────────────────────────
 
 import { describe, it, expect } from 'vitest';

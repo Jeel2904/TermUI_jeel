@@ -1,6 +1,6 @@
 // Modal — overlay dialog with backdrop
-import { Widget } from '@termui/widgets';
-import { type Style, type Screen, mergeStyles, defaultStyle, styleToCellAttrs, getBorderChars } from '@termui/core';
+import { Widget } from '@termuijs/widgets';
+import { type Style, type Screen, mergeStyles, defaultStyle, styleToCellAttrs, getBorderChars } from '@termuijs/core';
 
 export interface ModalOptions {
     title?: string;

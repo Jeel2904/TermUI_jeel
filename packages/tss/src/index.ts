@@ -1,5 +1,5 @@
 // ─────────────────────────────────────────────────────
-// @termui/tss — Terminal Style Sheets
+// @termuijs/tss — Terminal Style Sheets
 // ─────────────────────────────────────────────────────
 
 // Tokenizer

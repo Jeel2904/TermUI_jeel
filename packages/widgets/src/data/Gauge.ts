@@ -1,8 +1,8 @@
 // ─────────────────────────────────────────────────────
-// @termui/widgets — Gauge widget (label + bar + value)
+// @termuijs/widgets — Gauge widget (label + bar + value)
 // ─────────────────────────────────────────────────────
 
-import { type Screen, type Style, type Color, styleToCellAttrs, stringWidth } from '@termui/core';
+import { type Screen, type Style, type Color, styleToCellAttrs, stringWidth } from '@termuijs/core';
 import { Widget } from '../base/Widget.js';
 
 export interface GaugeOptions {

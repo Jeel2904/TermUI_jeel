@@ -1,6 +1,6 @@
 // Select — single-item dropdown selector
-import { Widget } from '@termui/widgets';
-import { type Style, type Screen, mergeStyles, defaultStyle, styleToCellAttrs } from '@termui/core';
+import { Widget } from '@termuijs/widgets';
+import { type Style, type Screen, mergeStyles, defaultStyle, styleToCellAttrs } from '@termuijs/core';
 
 export interface SelectOption { label: string; value: string; disabled?: boolean; }
 export interface SelectOptions {

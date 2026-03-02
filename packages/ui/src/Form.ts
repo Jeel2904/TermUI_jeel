@@ -1,6 +1,6 @@
 // Form — compound input container with validation
-import { Widget } from '@termui/widgets';
-import { type Style, type Screen, mergeStyles, defaultStyle, styleToCellAttrs } from '@termui/core';
+import { Widget } from '@termuijs/widgets';
+import { type Style, type Screen, mergeStyles, defaultStyle, styleToCellAttrs } from '@termuijs/core';
 
 export interface FormField {
     name: string; label: string; type: 'text' | 'select' | 'checkbox';

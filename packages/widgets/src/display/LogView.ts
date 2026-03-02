@@ -1,8 +1,8 @@
 // ─────────────────────────────────────────────────────
-// @termui/widgets — LogView widget (scrollable log)
+// @termuijs/widgets — LogView widget (scrollable log)
 // ─────────────────────────────────────────────────────
 
-import { type Screen, type Style, type Color, styleToCellAttrs, truncate } from '@termui/core';
+import { type Screen, type Style, type Color, styleToCellAttrs, truncate } from '@termuijs/core';
 import { Widget } from '../base/Widget.js';
 
 export interface LogViewOptions {

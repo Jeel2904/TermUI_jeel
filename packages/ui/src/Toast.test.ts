@@ -1,5 +1,5 @@
 // ─────────────────────────────────────────────────────
-// @termui/ui — Tests for Toast component
+// @termuijs/ui — Tests for Toast component
 // ─────────────────────────────────────────────────────
 
 import { describe, it, expect } from 'vitest';

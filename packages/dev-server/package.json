@@ -1,5 +1,5 @@
 {
-    "name": "@termui/dev-server",
+    "name": "@termuijs/dev-server",
     "version": "0.1.0",
     "description": "Hot-reload dev server for TermUI — watch .tsx/.tss, DevTools panel",
     "type": "module",
@@ -27,8 +27,8 @@
         "dev": "tsup --watch"
     },
     "dependencies": {
-        "@termui/core": "workspace:*",
-        "@termui/tss": "workspace:*"
+        "@termuijs/core": "workspace:*",
+        "@termuijs/tss": "workspace:*"
     },
     "devDependencies": {
         "tsup": "^8.0.0",

@@ -1,10 +1,10 @@
 // ─────────────────────────────────────────────────────
-// @termui/widgets — Tests for base Widget
+// @termuijs/widgets — Tests for base Widget
 // ─────────────────────────────────────────────────────
 
 import { describe, it, expect, vi } from 'vitest';
 import { Widget } from './Widget.js';
-import { Screen, computeLayout } from '@termui/core';
+import { Screen, computeLayout } from '@termuijs/core';
 
 // Concrete test subclass – Widget is abstract
 class TestWidget extends Widget {

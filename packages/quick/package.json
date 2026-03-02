@@ -1,5 +1,5 @@
 {
-    "name": "@termui/quick",
+    "name": "@termuijs/quick",
     "version": "0.1.0",
     "description": "High-level fluent API for TermUI — build any CLI app in 20-30 lines",
     "type": "module",
@@ -25,8 +25,8 @@
         "clean": "rm -rf dist"
     },
     "dependencies": {
-        "@termui/core": "workspace:*",
-        "@termui/widgets": "workspace:*"
+        "@termuijs/core": "workspace:*",
+        "@termuijs/widgets": "workspace:*"
     },
     "devDependencies": {
         "@types/node": "^22.0.0",

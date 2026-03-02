@@ -1,10 +1,10 @@
 // ─────────────────────────────────────────────────────
-// Todo App — built with @termui/quick
+// Todo App — built with @termuijs/quick
 //
 // ~20 lines: interactive list + text input
 // ─────────────────────────────────────────────────────
 
-import { app, row, col, list, input, text, gauge } from '@termui/quick';
+import { app, row, col, list, input, text, gauge } from '@termuijs/quick';
 
 const todos: string[] = ['Learn TermUI', 'Build a CLI app', 'Ship to npm'];
 

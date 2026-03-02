@@ -1,10 +1,10 @@
 // ─────────────────────────────────────────────────────
-// @termui/widgets — Tests for Box widget
+// @termuijs/widgets — Tests for Box widget
 // ─────────────────────────────────────────────────────
 
 import { describe, it, expect } from 'vitest';
 import { Box } from './Box.js';
-import { Screen } from '@termui/core';
+import { Screen } from '@termuijs/core';
 
 describe('Box', () => {
     it('renders border characters for single border', () => {

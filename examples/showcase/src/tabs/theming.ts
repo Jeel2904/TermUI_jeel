@@ -2,10 +2,10 @@
 // Theming Tab — Live theme switching with TSS preview
 // ─────────────────────────────────────────────────────
 
-import { Widget, Box, Text } from '@termui/widgets';
-import { Divider } from '@termui/ui';
-import { ThemeEngine, getAllBuiltinThemes, getBuiltinThemeNames } from '@termui/tss';
-import { type Screen, styleToCellAttrs } from '@termui/core';
+import { Widget, Box, Text } from '@termuijs/widgets';
+import { Divider } from '@termuijs/ui';
+import { ThemeEngine, getAllBuiltinThemes, getBuiltinThemeNames } from '@termuijs/tss';
+import { type Screen, styleToCellAttrs } from '@termuijs/core';
 
 const THEME_NAMES = getBuiltinThemeNames();
 

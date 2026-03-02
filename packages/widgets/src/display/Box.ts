@@ -1,9 +1,9 @@
 // ─────────────────────────────────────────────────────
-// @termui/widgets — Box widget
+// @termuijs/widgets — Box widget
 // ─────────────────────────────────────────────────────
 
-import type { Screen, Style } from '@termui/core';
-import { styleToCellAttrs } from '@termui/core';
+import type { Screen, Style } from '@termuijs/core';
+import { styleToCellAttrs } from '@termuijs/core';
 import { Widget } from '../base/Widget.js';
 
 /**

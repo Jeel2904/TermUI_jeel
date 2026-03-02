@@ -1,5 +1,5 @@
 // ─────────────────────────────────────────────────────
-// @termui/core — Layout types (Rect, Size, Edges)
+// @termuijs/core — Layout types (Rect, Size, Edges)
 // ─────────────────────────────────────────────────────
 
 /**

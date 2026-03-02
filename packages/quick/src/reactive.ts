@@ -1,5 +1,5 @@
 // ─────────────────────────────────────────────────────
-// @termui/quick — Reactive data binding
+// @termuijs/quick — Reactive data binding
 // ─────────────────────────────────────────────────────
 
 /**

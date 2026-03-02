@@ -1,5 +1,5 @@
 // ─────────────────────────────────────────────────────
-// @termui/core — Tests for Border utilities
+// @termuijs/core — Tests for Border utilities
 // ─────────────────────────────────────────────────────
 
 import { describe, it, expect } from 'vitest';

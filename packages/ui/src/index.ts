@@ -1,11 +1,11 @@
 // ─────────────────────────────────────────────────────
-// @termui/ui — Rich Component Library
+// @termuijs/ui — Rich Component Library
 //
 // The shadcn/ui for terminals — 16+ production-ready
 // components for building beautiful CLI apps.
 // ─────────────────────────────────────────────────────
 
-// ── Re-exports from @termui/widgets (base components) ──
+// ── Re-exports from @termuijs/widgets (base components) ──
 export {
     Box,
     Text,
@@ -19,7 +19,7 @@ export {
     ProgressBar,
     Spinner,
     Widget,
-} from '@termui/widgets';
+} from '@termuijs/widgets';
 
 // ── New components ──
 export { Divider } from './Divider.js';

@@ -1,5 +1,5 @@
 // ─────────────────────────────────────────────────────
-// @termui/widgets — Base Widget class
+// @termuijs/widgets — Base Widget class
 // ─────────────────────────────────────────────────────
 
 import {
@@ -17,7 +17,7 @@ import {
     getBorderChars,
     styleToCellAttrs,
     containsPoint,
-} from '@termui/core';
+} from '@termuijs/core';
 
 /**
  * Event map for widgets.

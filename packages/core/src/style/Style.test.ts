@@ -1,5 +1,5 @@
 // ─────────────────────────────────────────────────────
-// @termui/core — Tests for Style utilities
+// @termuijs/core — Tests for Style utilities
 // ─────────────────────────────────────────────────────
 
 import { describe, it, expect } from 'vitest';

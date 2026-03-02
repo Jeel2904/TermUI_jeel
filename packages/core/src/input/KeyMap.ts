@@ -1,5 +1,5 @@
 // ─────────────────────────────────────────────────────
-// @termui/core — Key mapping constants
+// @termuijs/core — Key mapping constants
 // ─────────────────────────────────────────────────────
 
 /**

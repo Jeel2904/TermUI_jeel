@@ -1,5 +1,5 @@
 // ─────────────────────────────────────────────────────
-// @termui/core — Color types and color profile detection
+// @termuijs/core — Color types and color profile detection
 // ─────────────────────────────────────────────────────
 
 /**

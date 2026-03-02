@@ -2,7 +2,7 @@
 // Project Templates — generates files for new apps
 // ─────────────────────────────────────────────────────
 
-import { getBuiltinTheme } from '@termui/tss';
+import { getBuiltinTheme } from '@termuijs/tss';
 
 export interface ProjectConfig {
     name: string;
@@ -37,13 +37,13 @@ export function generateProject(config: ProjectConfig): GeneratedFile[] {
                 start: 'node dist/index.js',
             },
             dependencies: {
-                '@termui/core': 'latest',
-                '@termui/widgets': 'latest',
-                '@termui/ui': 'latest',
-                '@termui/jsx': 'latest',
-                '@termui/tss': 'latest',
-                ...(config.features.dataProviders ? { '@termui/data': 'latest' } : {}),
-                ...(config.features.router ? { '@termui/router': 'latest' } : {}),
+                '@termuijs/core': 'latest',
+                '@termuijs/widgets': 'latest',
+                '@termuijs/ui': 'latest',
+                '@termuijs/jsx': 'latest',
+                '@termuijs/tss': 'latest',
+                ...(config.features.dataProviders ? { '@termuijs/data': 'latest' } : {}),
+                ...(config.features.router ? { '@termuijs/router': 'latest' } : {}),
             },
             devDependencies: {
                 tsx: '^4.0.0',
@@ -62,7 +62,7 @@ export function generateProject(config: ProjectConfig): GeneratedFile[] {
                 module: 'ESNext',
                 moduleResolution: 'bundler',
                 jsx: 'react-jsx',
-                jsxImportSource: '@termui/jsx',
+                jsxImportSource: '@termuijs/jsx',
                 strict: true,
                 esModuleInterop: true,
                 outDir: 'dist',
@@ -75,7 +75,7 @@ export function generateProject(config: ProjectConfig): GeneratedFile[] {
     // ── termui.config.ts ──
     files.push({
         path: 'termui.config.ts',
-        content: `import { defineConfig } from '@termui/core';
+        content: `import { defineConfig } from '@termuijs/core';
 
 export default defineConfig({
     theme: '${config.theme}',
@@ -112,8 +112,8 @@ export default defineConfig({
 function generateEmptyTemplate(config: ProjectConfig): GeneratedFile[] {
     return [{
         path: 'src/index.tsx',
-        content: `import { app } from '@termui/quick';
-import { Text, Box } from '@termui/ui';
+        content: `import { app } from '@termuijs/quick';
+import { Text, Box } from '@termuijs/ui';
 
 app('${config.name}')
     .rows(
@@ -127,8 +127,8 @@ app('${config.name}')
 function generateDashboardTemplate(config: ProjectConfig): GeneratedFile[] {
     return [{
         path: 'src/index.tsx',
-        content: `import { app, gauge, table, sparkline } from '@termui/quick';
-${config.features.dataProviders ? "import { cpu, memory, disk, processes } from '@termui/data';" : ''}
+        content: `import { app, gauge, table, sparkline } from '@termuijs/quick';
+${config.features.dataProviders ? "import { cpu, memory, disk, processes } from '@termuijs/data';" : ''}
 
 app('⚡ ${config.name}')
     .rows(
@@ -159,8 +159,8 @@ app('⚡ ${config.name}')
 function generateInteractiveTemplate(config: ProjectConfig): GeneratedFile[] {
     return [{
         path: 'src/index.tsx',
-        content: `import { app } from '@termui/quick';
-import { Form, Select, Toast, ConfirmDialog } from '@termui/ui';
+        content: `import { app } from '@termuijs/quick';
+import { Form, Select, Toast, ConfirmDialog } from '@termuijs/ui';
 
 // Interactive tool with forms, selects, and toasts
 app('🔧 ${config.name}')
@@ -175,7 +175,7 @@ app('🔧 ${config.name}')
 function generateCliWrapperTemplate(config: ProjectConfig): GeneratedFile[] {
     return [{
         path: 'src/index.tsx',
-        content: `import { app, text, logView } from '@termui/quick';
+        content: `import { app, text, logView } from '@termuijs/quick';
 import { exec } from 'node:child_process';
 
 // CLI wrapper — runs a command and displays output

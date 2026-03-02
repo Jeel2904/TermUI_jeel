@@ -14,7 +14,7 @@
 // - Graceful CI/pipe fallback
 //
 
-import { App } from '@termui/core';
+import { App } from '@termuijs/core';
 import {
     Box,
     Text,
@@ -22,8 +22,8 @@ import {
     Spinner,
     Table,
     Widget,
-} from '@termui/widgets';
-import type { Screen, KeyEvent } from '@termui/core';
+} from '@termuijs/widgets';
+import type { Screen, KeyEvent } from '@termuijs/core';
 
 // ── Dashboard Root Widget ────────────────────────────
 

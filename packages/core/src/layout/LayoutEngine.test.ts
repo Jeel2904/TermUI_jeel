@@ -1,5 +1,5 @@
 // ─────────────────────────────────────────────────────
-// @termui/core — Tests for Layout Engine
+// @termuijs/core — Tests for Layout Engine
 // ─────────────────────────────────────────────────────
 
 import { describe, it, expect } from 'vitest';

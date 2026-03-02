@@ -1,5 +1,5 @@
 // ─────────────────────────────────────────────────────
-// @termui/data — System information helpers
+// @termuijs/data — System information helpers
 // ─────────────────────────────────────────────────────
 
 import * as os from 'node:os';

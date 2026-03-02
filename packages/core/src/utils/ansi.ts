@@ -1,5 +1,5 @@
 // ─────────────────────────────────────────────────────
-// @termui/core — ANSI escape sequence helpers
+// @termuijs/core — ANSI escape sequence helpers
 // ─────────────────────────────────────────────────────
 
 /** CSI (Control Sequence Introducer) prefix */

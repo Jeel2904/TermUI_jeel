@@ -1,8 +1,8 @@
 // ─────────────────────────────────────────────────────
-// @termui/widgets — ProgressBar widget
+// @termuijs/widgets — ProgressBar widget
 // ─────────────────────────────────────────────────────
 
-import { type Screen, type Style, styleToCellAttrs, type Color } from '@termui/core';
+import { type Screen, type Style, styleToCellAttrs, type Color } from '@termuijs/core';
 import { Widget } from '../base/Widget.js';
 
 export interface ProgressBarOptions {

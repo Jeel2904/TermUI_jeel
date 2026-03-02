@@ -2,10 +2,10 @@
 // DevTools Tab — Perf metrics, widget tree inspector
 // ─────────────────────────────────────────────────────
 
-import { Widget, Box, Text, ProgressBar } from '@termui/widgets';
-import { Divider } from '@termui/ui';
-import { DevTools } from '@termui/dev-server';
-import type { Screen } from '@termui/core';
+import { Widget, Box, Text, ProgressBar } from '@termuijs/widgets';
+import { Divider } from '@termuijs/ui';
+import { DevTools } from '@termuijs/dev-server';
+import type { Screen } from '@termuijs/core';
 
 export class DevToolsTab extends Widget {
     private _devtools: DevTools;

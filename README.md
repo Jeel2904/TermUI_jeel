@@ -4,9 +4,9 @@
 </p>
 
 <p align="center">
-  <a href="https://www.npmjs.com/package/@termui/core"><img src="https://img.shields.io/npm/v/@termui/core.svg" alt="npm version"></a>
+  <a href="https://www.npmjs.com/package/@termuijs/core"><img src="https://img.shields.io/npm/v/@termuijs/core.svg" alt="npm version"></a>
   <a href="https://github.com/user/termui/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License"></a>
-  <a href="https://www.npmjs.com/package/@termui/core"><img src="https://img.shields.io/npm/dm/@termui/core.svg" alt="Downloads"></a>
+  <a href="https://www.npmjs.com/package/@termuijs/core"><img src="https://img.shields.io/npm/dm/@termuijs/core.svg" alt="Downloads"></a>
 </p>
 
 ## What is TermUI?
@@ -27,12 +27,12 @@ You get a working terminal app in 30 seconds.
 ## Manual Setup
 
 ```bash
-npm install @termui/core @termui/widgets @termui/ui
+npm install @termuijs/core @termuijs/widgets @termuijs/ui
 ```
 
 ```typescript
-import { App } from '@termui/core';
-import { Box, Text } from '@termui/widgets';
+import { App } from '@termuijs/core';
+import { Box, Text } from '@termuijs/widgets';
 
 const app = new App();
 const root = new Box({ flexDirection: 'column' });
@@ -47,16 +47,16 @@ app.start();
 
 | Package | Description |
 |---------|-------------|
-| `@termui/core` | Rendering engine, layout, events, input parsing, screen buffer |
-| `@termui/widgets` | 20+ base widgets: Box, Text, Table, Gauge, Spinner, TextInput |
-| `@termui/ui` | High-level components: Modal, Select, Tabs, Toast, Form, CommandPalette |
-| `@termui/jsx` | TSX runtime with React-like hooks (useState, useEffect, useRef) |
-| `@termui/tss` | Terminal Style Sheets. CSS-like theming with 5 built-in themes |
-| `@termui/motion` | Spring-physics animations for smooth terminal transitions |
-| `@termui/router` | File-based screen routing. Next.js-style navigation for CLIs |
-| `@termui/quick` | Fluent builder API. Build any CLI app in 20-30 lines |
-| `@termui/data` | Real-time system data: CPU, memory, disk, processes, network |
-| `@termui/dev-server` | Hot-reload dev server with DevTools panel |
+| `@termuijs/core` | Rendering engine, layout, events, input parsing, screen buffer |
+| `@termuijs/widgets` | 20+ base widgets: Box, Text, Table, Gauge, Spinner, TextInput |
+| `@termuijs/ui` | High-level components: Modal, Select, Tabs, Toast, Form, CommandPalette |
+| `@termuijs/jsx` | TSX runtime with React-like hooks (useState, useEffect, useRef) |
+| `@termuijs/tss` | Terminal Style Sheets. CSS-like theming with 5 built-in themes |
+| `@termuijs/motion` | Spring-physics animations for smooth terminal transitions |
+| `@termuijs/router` | File-based screen routing. Next.js-style navigation for CLIs |
+| `@termuijs/quick` | Fluent builder API. Build any CLI app in 20-30 lines |
+| `@termuijs/data` | Real-time system data: CPU, memory, disk, processes, network |
+| `@termuijs/dev-server` | Hot-reload dev server with DevTools panel |
 | `create-termui-app` | Project scaffolding CLI |
 
 ## Architecture
@@ -64,15 +64,15 @@ app.start();
 ```
 create-termui-app (scaffolding)
         |
-   @termui/quick (fluent API)
+   @termuijs/quick (fluent API)
         |
-   @termui/jsx (TSX + hooks)
+   @termuijs/jsx (TSX + hooks)
         |
-   @termui/ui (Modal, Select, Form, Toast...)
+   @termuijs/ui (Modal, Select, Form, Toast...)
         |
-   @termui/widgets (Box, Text, Table, Gauge...)
+   @termuijs/widgets (Box, Text, Table, Gauge...)
         |
-   @termui/core (Screen, Renderer, Layout, Events, Input)
+   @termuijs/core (Screen, Renderer, Layout, Events, Input)
         |
     Node.js TTY
 ```
@@ -125,8 +125,8 @@ Every layer depends only on the layer below. You choose your entry point.
 ### Dashboard with Real-Time Data
 
 ```typescript
-import { app, gauge, table, sparkline } from '@termui/quick';
-import { cpu, memory, processes } from '@termui/data';
+import { app, gauge, table, sparkline } from '@termuijs/quick';
+import { cpu, memory, processes } from '@termuijs/data';
 
 app('System Monitor')
     .rows(
@@ -149,8 +149,8 @@ app('System Monitor')
 ### JSX with Hooks
 
 ```tsx
-import { render, useState } from '@termui/jsx';
-import { Box, Text } from '@termui/widgets';
+import { render, useState } from '@termuijs/jsx';
+import { Box, Text } from '@termuijs/widgets';
 
 function Counter() {
     const [count, setCount] = useState(0);

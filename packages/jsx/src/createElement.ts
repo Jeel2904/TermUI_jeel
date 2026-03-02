@@ -1,12 +1,12 @@
 // ─────────────────────────────────────────────────────
-// @termui/jsx — JSX Factory
+// @termuijs/jsx — JSX Factory
 //
 // This is the `h()` function invoked by the JSX
 // transform. It creates VElement nodes.
 //
 // Usage in tsconfig.json:
 //   "jsx": "react-jsx",
-//   "jsxImportSource": "@termui/jsx"
+//   "jsxImportSource": "@termuijs/jsx"
 // ─────────────────────────────────────────────────────
 
 import type { VNode, VElement, FC } from './vnode.js';

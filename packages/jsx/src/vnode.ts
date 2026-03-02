@@ -1,12 +1,12 @@
 // ─────────────────────────────────────────────────────
-// @termui/jsx — Virtual Node types
+// @termuijs/jsx — Virtual Node types
 //
 // A VNode is the lightweight description of what to
 // render. Functional components return VNodes; the
 // reconciler turns them into real Widgets.
 // ─────────────────────────────────────────────────────
 
-import type { Style, Color } from '@termui/core';
+import type { Style, Color } from '@termuijs/core';
 
 /** A functional component — takes props, returns VNode tree */
 export type FC<P = {}> = (props: P & { children?: VNode | VNode[] }) => VNode;

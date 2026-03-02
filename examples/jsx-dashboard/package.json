@@ -1,5 +1,5 @@
 {
-    "name": "@termui/example-jsx-dashboard",
+    "name": "@termuijs/example-jsx-dashboard",
     "version": "0.1.0",
     "private": true,
     "description": "JSX-based system dashboard — React-like components for the terminal",
@@ -9,10 +9,10 @@
         "build": "echo 'no build needed'"
     },
     "dependencies": {
-        "@termui/jsx": "workspace:*",
-        "@termui/widgets": "workspace:*",
-        "@termui/data": "workspace:*",
-        "@termui/quick": "workspace:*"
+        "@termuijs/jsx": "workspace:*",
+        "@termuijs/widgets": "workspace:*",
+        "@termuijs/data": "workspace:*",
+        "@termuijs/quick": "workspace:*"
     },
     "devDependencies": {
         "tsx": "^4.7.0"

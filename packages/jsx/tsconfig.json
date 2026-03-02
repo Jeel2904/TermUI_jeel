@@ -9,8 +9,9 @@
         "strict": true,
         "esModuleInterop": true,
         "skipLibCheck": true,
-        "jsx": "react-jsx",
-        "jsxImportSource": "@termui/jsx"
+        "jsx": "react",
+        "jsxFactory": "createElement",
+        "jsxFragmentFactory": "Fragment"
     },
     "include": [
         "src"

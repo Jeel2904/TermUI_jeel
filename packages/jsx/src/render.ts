@@ -1,13 +1,13 @@
 // ─────────────────────────────────────────────────────
-// @termui/jsx — render() entry point
+// @termuijs/jsx — render() entry point
 //
 // This is the top-level API. Users call:
 //   render(<App />);
 // to mount a component tree into a terminal App.
 // ─────────────────────────────────────────────────────
 
-import { App, type KeyEvent } from '@termui/core';
-import { Box, Widget } from '@termui/widgets';
+import { App, type KeyEvent } from '@termuijs/core';
+import { Box, Widget } from '@termuijs/widgets';
 import type { VNode, FC } from './vnode.js';
 import { reconcile, unmountAll } from './reconciler.js';
 import { setRequestRender } from './hooks.js';
@@ -26,7 +26,7 @@ export interface RenderOptions {
  * Render a JSX component tree into the terminal.
  *
  * ```tsx
- * import { render } from '@termui/jsx';
+ * import { render } from '@termuijs/jsx';
  *
  * function App() {
  *     const [count, setCount] = useState(0);
@@ -99,7 +99,7 @@ export async function render(
  * Convenience: render a functional component directly.
  *
  * ```tsx
- * import { renderApp } from '@termui/jsx';
+ * import { renderApp } from '@termuijs/jsx';
  *
  * renderApp(App, { title: 'My Dashboard' });
  * ```

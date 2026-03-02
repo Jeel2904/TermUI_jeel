@@ -1,5 +1,5 @@
 // ─────────────────────────────────────────────────────
-// @termui/core — Differential Renderer
+// @termuijs/core — Differential Renderer
 // ─────────────────────────────────────────────────────
 
 import type { Terminal } from './Terminal.js';

@@ -1,16 +1,16 @@
 {
-    "name": "@termui/example-sysmon",
+    "name": "@termuijs/example-sysmon",
     "version": "0.1.0",
     "private": true,
-    "description": "System monitor — built with @termui/quick in ~25 lines",
+    "description": "System monitor — built with @termuijs/quick in ~25 lines",
     "type": "module",
     "scripts": {
         "start": "tsx src/index.ts",
         "build": "echo 'no build needed'"
     },
     "dependencies": {
-        "@termui/quick": "workspace:*",
-        "@termui/data": "workspace:*"
+        "@termuijs/quick": "workspace:*",
+        "@termuijs/data": "workspace:*"
     },
     "devDependencies": {
         "tsx": "^4.21.0",

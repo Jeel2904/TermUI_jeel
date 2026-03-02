@@ -1,5 +1,5 @@
 // ─────────────────────────────────────────────────────
-// @termui/core — Terminal adapter
+// @termuijs/core — Terminal adapter
 // ─────────────────────────────────────────────────────
 
 import { ColorDepth, detectColorDepth } from '../style/Color.js';

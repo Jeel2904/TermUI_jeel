@@ -1,17 +1,17 @@
 // ─────────────────────────────────────────────────────
 // JSX Dashboard — React-like terminal UI
 //
-// This demo showcases the @termui/jsx API:
+// This demo showcases the @termuijs/jsx API:
 //   ✓ Uses .tsx file extension with JSX compilation
 //   ✓ Functional component patterns
 //   ✓ Same data providers as system-monitor
-//   ✓ @termui/quick fluent API
+//   ✓ @termuijs/quick fluent API
 //
 // Run: cd examples/jsx-dashboard && pnpm start
 // ─────────────────────────────────────────────────────
 
-import { app, row, gauge, sparkline, table, text, status } from '@termui/quick';
-import { cpu, memory, disk, processes, system, network } from '@termui/data';
+import { app, row, gauge, sparkline, table, text, status } from '@termuijs/quick';
+import { cpu, memory, disk, processes, system, network } from '@termuijs/data';
 
 // Keep a rolling history for sparklines
 const cpuHistory: number[] = [];
@@ -69,7 +69,7 @@ app('⚡ JSX Dashboard')
         ),
 
         // Footer
-        text('  q quit  •  r refresh  •  Built with @termui/jsx ⚡', { dim: true }),
+        text('  q quit  •  r refresh  •  Built with @termuijs/jsx ⚡', { dim: true }),
     )
     .keys({ q: 'quit', r: 'refresh' })
     .refresh('1s')

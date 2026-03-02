@@ -1,8 +1,8 @@
 // ─────────────────────────────────────────────────────
-// @termui/widgets — Text widget
+// @termuijs/widgets — Text widget
 // ─────────────────────────────────────────────────────
 
-import { type Screen, type Style, styleToCellAttrs, wordWrap, stringWidth } from '@termui/core';
+import { type Screen, type Style, styleToCellAttrs, wordWrap, stringWidth } from '@termuijs/core';
 import { Widget } from '../base/Widget.js';
 
 export interface TextProps {

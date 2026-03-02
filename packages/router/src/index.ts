@@ -1,5 +1,5 @@
 // ─────────────────────────────────────────────────────
-// @termui/router — Screen Router
+// @termuijs/router — Screen Router
 // ─────────────────────────────────────────────────────
 
 export { Router } from './router.js';

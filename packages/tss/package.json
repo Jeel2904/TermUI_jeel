@@ -1,5 +1,5 @@
 {
-    "name": "@termui/tss",
+    "name": "@termuijs/tss",
     "version": "0.1.0",
     "description": "Terminal Style Sheets — CSS-inspired theming for CLI apps",
     "type": "module",
@@ -24,8 +24,8 @@
         "dev": "tsup --watch"
     },
     "dependencies": {
-        "@termui/core": "workspace:*",
-        "@termui/widgets": "workspace:*"
+        "@termuijs/core": "workspace:*",
+        "@termuijs/widgets": "workspace:*"
     },
     "devDependencies": {
         "tsup": "^8.0.0",

@@ -4,7 +4,7 @@
 
 import { tokenize } from './tokenizer.js';
 import { parse, type TSSStylesheet, type TSSRule, type TSSSelector, type TSSValue } from './parser.js';
-import type { Style, Color, BorderStyle } from '@termui/core';
+import type { Style, Color, BorderStyle } from '@termuijs/core';
 
 export interface ThemeVariables {
     [key: string]: string;

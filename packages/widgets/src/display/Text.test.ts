@@ -1,10 +1,10 @@
 // ─────────────────────────────────────────────────────
-// @termui/widgets — Tests for Text widget
+// @termuijs/widgets — Tests for Text widget
 // ─────────────────────────────────────────────────────
 
 import { describe, it, expect } from 'vitest';
 import { Text } from './Text.js';
-import { Screen } from '@termui/core';
+import { Screen } from '@termuijs/core';
 
 function renderText(content: string, style = {}, props = {}, width = 20, height = 5) {
     const text = new Text(content, style, props);

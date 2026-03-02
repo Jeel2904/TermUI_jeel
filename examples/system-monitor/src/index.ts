@@ -1,11 +1,11 @@
 // ─────────────────────────────────────────────────────
-// System Monitor — built with @termui/quick + @termui/data
+// System Monitor — built with @termuijs/quick + @termuijs/data
 //
 // ~25 lines to create a full real-time system dashboard
 // ─────────────────────────────────────────────────────
 
-import { app, row, gauge, sparkline, table, text, status } from '@termui/quick';
-import { cpu, memory, disk, processes, system, network } from '@termui/data';
+import { app, row, gauge, sparkline, table, text, status } from '@termuijs/quick';
+import { cpu, memory, disk, processes, system, network } from '@termuijs/data';
 
 // Keep a rolling history for sparklines
 const cpuHistory: number[] = [];

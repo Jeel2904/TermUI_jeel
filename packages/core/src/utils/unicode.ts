@@ -1,5 +1,5 @@
 // ─────────────────────────────────────────────────────
-// @termui/core — Unicode string width utilities
+// @termuijs/core — Unicode string width utilities
 // ─────────────────────────────────────────────────────
 
 /**

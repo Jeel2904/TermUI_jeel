@@ -1,5 +1,5 @@
 // ─────────────────────────────────────────────────────
-// @termui/core — Screen buffer (double-buffered cell grid)
+// @termuijs/core — Screen buffer (double-buffered cell grid)
 // ─────────────────────────────────────────────────────
 
 import type { Color } from '../style/Color.js';

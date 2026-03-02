@@ -1,5 +1,5 @@
 // ─────────────────────────────────────────────────────
-// @termui/widgets — Tests for Spinner widget
+// @termuijs/widgets — Tests for Spinner widget
 // ─────────────────────────────────────────────────────
 
 import { describe, it, expect } from 'vitest';

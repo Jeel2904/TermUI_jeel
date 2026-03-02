@@ -1,9 +1,9 @@
 // ─────────────────────────────────────────────────────
-// @termui/jsx — JSX Automatic Runtime
+// @termuijs/jsx — JSX Automatic Runtime
 //
 // This file is imported automatically by TypeScript
 // when using "jsx": "react-jsx" with
-// "jsxImportSource": "@termui/jsx"
+// "jsxImportSource": "@termuijs/jsx"
 // ─────────────────────────────────────────────────────
 
 export { jsx, jsxs } from './createElement.js';

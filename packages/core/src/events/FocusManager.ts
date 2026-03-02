@@ -1,5 +1,5 @@
 // ─────────────────────────────────────────────────────
-// @termui/core — Focus Manager
+// @termuijs/core — Focus Manager
 // ─────────────────────────────────────────────────────
 
 import { EventEmitter } from './EventEmitter.js';

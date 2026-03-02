@@ -1,5 +1,5 @@
 {
-    "name": "@termui/example-showcase",
+    "name": "@termuijs/example-showcase",
     "version": "0.1.0",
     "private": true,
     "type": "module",
@@ -9,12 +9,12 @@
         "build": "echo 'no build needed'"
     },
     "dependencies": {
-        "@termui/core": "workspace:*",
-        "@termui/widgets": "workspace:*",
-        "@termui/ui": "workspace:*",
-        "@termui/tss": "workspace:*",
-        "@termui/motion": "workspace:*",
-        "@termui/dev-server": "workspace:*"
+        "@termuijs/core": "workspace:*",
+        "@termuijs/widgets": "workspace:*",
+        "@termuijs/ui": "workspace:*",
+        "@termuijs/tss": "workspace:*",
+        "@termuijs/motion": "workspace:*",
+        "@termuijs/dev-server": "workspace:*"
     },
     "devDependencies": {
         "tsx": "^4.19.0"

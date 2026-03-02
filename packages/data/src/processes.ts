@@ -1,5 +1,5 @@
 // ─────────────────────────────────────────────────────
-// @termui/data — Process listing via shell commands
+// @termuijs/data — Process listing via shell commands
 // ─────────────────────────────────────────────────────
 
 import { execSync } from 'node:child_process';

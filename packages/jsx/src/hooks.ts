@@ -1,12 +1,12 @@
 // ─────────────────────────────────────────────────────
-// @termui/jsx — Hooks Engine
+// @termuijs/jsx — Hooks Engine
 //
 // A minimal React-like hooks runtime. Each functional
 // component gets a Fiber that tracks its hook state.
 // Hooks are called in order — same rules as React.
 // ─────────────────────────────────────────────────────
 
-import type { KeyEvent } from '@termui/core';
+import type { KeyEvent } from '@termuijs/core';
 
 // ── Fiber — per-component-instance state ──
 

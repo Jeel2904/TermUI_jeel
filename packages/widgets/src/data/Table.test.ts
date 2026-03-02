@@ -1,5 +1,5 @@
 // ─────────────────────────────────────────────────────
-// @termui/widgets — Tests for Table widget
+// @termuijs/widgets — Tests for Table widget
 // ─────────────────────────────────────────────────────
 
 import { describe, it, expect } from 'vitest';

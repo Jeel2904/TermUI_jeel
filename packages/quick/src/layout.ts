@@ -1,9 +1,9 @@
 // ─────────────────────────────────────────────────────
-// @termui/quick — Layout helpers
+// @termuijs/quick — Layout helpers
 // ─────────────────────────────────────────────────────
 
-import { Box, Text, Widget } from '@termui/widgets';
-import type { Style } from '@termui/core';
+import { Box, Text, Widget } from '@termuijs/widgets';
+import type { Style } from '@termuijs/core';
 import type { Reactive } from './reactive.js';
 import { resolve, isReactive } from './reactive.js';
 

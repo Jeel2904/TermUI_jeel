@@ -1,5 +1,5 @@
 // ─────────────────────────────────────────────────────
-// @termui/motion — Terminal Animations
+// @termuijs/motion — Terminal Animations
 // ─────────────────────────────────────────────────────
 
 // Spring physics

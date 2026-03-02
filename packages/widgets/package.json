@@ -1,5 +1,5 @@
 {
-    "name": "@termui/widgets",
+    "name": "@termuijs/widgets",
     "version": "0.1.0",
     "description": "Widget library for TermUI — 20+ interactive terminal UI components",
     "type": "module",
@@ -26,7 +26,7 @@
         "test": "vitest run --config ../../vitest.config.ts"
     },
     "dependencies": {
-        "@termui/core": "workspace:*"
+        "@termuijs/core": "workspace:*"
     },
     "devDependencies": {
         "typescript": "^5.7.0",

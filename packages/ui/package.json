@@ -1,5 +1,5 @@
 {
-    "name": "@termui/ui",
+    "name": "@termuijs/ui",
     "version": "0.1.0",
     "description": "Rich component library for TermUI — Modal, Tabs, Select, Form, Toast, and more",
     "type": "module",
@@ -24,8 +24,8 @@
         "dev": "tsup --watch"
     },
     "dependencies": {
-        "@termui/core": "workspace:*",
-        "@termui/widgets": "workspace:*"
+        "@termuijs/core": "workspace:*",
+        "@termuijs/widgets": "workspace:*"
     },
     "devDependencies": {
         "tsup": "^8.0.0",

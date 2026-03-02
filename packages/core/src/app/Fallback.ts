@@ -1,5 +1,5 @@
 // ─────────────────────────────────────────────────────
-// @termui/core — Fallback (static) renderer for CI/pipes
+// @termuijs/core — Fallback (static) renderer for CI/pipes
 // ─────────────────────────────────────────────────────
 
 import type { Screen } from '../terminal/Screen.js';

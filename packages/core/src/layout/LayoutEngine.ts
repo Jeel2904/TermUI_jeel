@@ -1,5 +1,5 @@
 // ─────────────────────────────────────────────────────
-// @termui/core — Flexbox-like Layout Engine
+// @termuijs/core — Flexbox-like Layout Engine
 // ─────────────────────────────────────────────────────
 
 import type { Style } from '../style/Style.js';

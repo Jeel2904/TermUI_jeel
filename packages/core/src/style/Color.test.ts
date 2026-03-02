@@ -1,5 +1,5 @@
 // ─────────────────────────────────────────────────────
-// @termui/core — Tests for Color module
+// @termuijs/core — Tests for Color module
 // ─────────────────────────────────────────────────────
 
 import { describe, it, expect, beforeEach, afterEach, vi } from 'vitest';

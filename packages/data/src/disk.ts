@@ -1,5 +1,5 @@
 // ─────────────────────────────────────────────────────
-// @termui/data — Disk usage via shell commands
+// @termuijs/data — Disk usage via shell commands
 // ─────────────────────────────────────────────────────
 
 import { execSync } from 'node:child_process';

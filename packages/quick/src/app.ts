@@ -1,9 +1,9 @@
 // ─────────────────────────────────────────────────────
-// @termui/quick — AppBuilder: the fluent API entry point
+// @termuijs/quick — AppBuilder: the fluent API entry point
 // ─────────────────────────────────────────────────────
 
-import { App, type KeyEvent, type EventMap } from '@termui/core';
-import { Box, Text, Widget, Gauge, Sparkline, StatusIndicator, Table, LogView, List, TextInput } from '@termui/widgets';
+import { App, type KeyEvent, type EventMap } from '@termuijs/core';
+import { Box, Text, Widget, Gauge, Sparkline, StatusIndicator, Table, LogView, List, TextInput } from '@termuijs/widgets';
 import type { LayoutChild } from './layout.js';
 import { toWidget, col } from './layout.js';
 import { resolve, isReactive, type Reactive } from './reactive.js';
@@ -354,8 +354,8 @@ export class AppBuilder {
  *
  * @example
  * ```ts
- * import { app, row, gauge } from '@termui/quick';
- * import { cpu, memory } from '@termui/data';
+ * import { app, row, gauge } from '@termuijs/quick';
+ * import { cpu, memory } from '@termuijs/data';
  *
  * app('System Monitor')
  *   .rows(

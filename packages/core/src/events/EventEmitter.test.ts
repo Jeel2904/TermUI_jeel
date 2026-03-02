@@ -1,5 +1,5 @@
 // ─────────────────────────────────────────────────────
-// @termui/core — Tests for EventEmitter
+// @termuijs/core — Tests for EventEmitter
 // ─────────────────────────────────────────────────────
 
 import { describe, it, expect, vi } from 'vitest';

@@ -1,5 +1,5 @@
 // ─────────────────────────────────────────────────────
-// @termui/core — Tests for Screen buffer
+// @termuijs/core — Tests for Screen buffer
 // ─────────────────────────────────────────────────────
 
 import { describe, it, expect } from 'vitest';

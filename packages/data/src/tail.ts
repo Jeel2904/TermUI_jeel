@@ -1,5 +1,5 @@
 // ─────────────────────────────────────────────────────
-// @termui/data — File tailing via fs.watch
+// @termuijs/data — File tailing via fs.watch
 // ─────────────────────────────────────────────────────
 
 import * as fs from 'node:fs';

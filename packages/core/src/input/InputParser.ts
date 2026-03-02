@@ -1,5 +1,5 @@
 // ─────────────────────────────────────────────────────
-// @termui/core — Input Parser
+// @termuijs/core — Input Parser
 // ─────────────────────────────────────────────────────
 
 import type { KeyEvent, MouseEvent } from '../events/types.js';

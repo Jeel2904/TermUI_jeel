@@ -1,5 +1,5 @@
 // ─────────────────────────────────────────────────────
-// @termui/ui — Tests for Tree component
+// @termuijs/ui — Tests for Tree component
 // ─────────────────────────────────────────────────────
 
 import { describe, it, expect, vi } from 'vitest';

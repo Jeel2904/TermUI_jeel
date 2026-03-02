@@ -1,5 +1,5 @@
 // ─────────────────────────────────────────────────────
-// @termui/ui — Tests for Divider component
+// @termuijs/ui — Tests for Divider component
 // ─────────────────────────────────────────────────────
 
 import { describe, it, expect } from 'vitest';

@@ -1,5 +1,5 @@
 // ─────────────────────────────────────────────────────
-// @termui/router — Tests for Router
+// @termuijs/router — Tests for Router
 // ─────────────────────────────────────────────────────
 
 import { describe, it, expect, vi } from 'vitest';

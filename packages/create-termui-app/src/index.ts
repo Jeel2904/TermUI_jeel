@@ -4,7 +4,7 @@
 
 import { resolve, join } from 'node:path';
 import { mkdirSync, writeFileSync, existsSync } from 'node:fs';
-import { getBuiltinThemeNames } from '@termui/tss';
+import { getBuiltinThemeNames } from '@termuijs/tss';
 import { textPrompt, selectPrompt, multiSelectPrompt } from './prompts.js';
 import { generateProject, type ProjectConfig } from './templates.js';
 

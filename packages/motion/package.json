@@ -1,5 +1,5 @@
 {
-    "name": "@termui/motion",
+    "name": "@termuijs/motion",
     "version": "0.1.0",
     "description": "Spring-physics animations for TermUI — smooth terminal transitions",
     "type": "module",
@@ -24,7 +24,7 @@
         "dev": "tsup --watch"
     },
     "dependencies": {
-        "@termui/core": "workspace:*"
+        "@termuijs/core": "workspace:*"
     },
     "devDependencies": {
         "tsup": "^8.0.0",

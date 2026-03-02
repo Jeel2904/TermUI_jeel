@@ -1,13 +1,13 @@
 // ─────────────────────────────────────────────────────
-// @termui/jsx — Reconciler
+// @termuijs/jsx — Reconciler
 //
 // Converts VNode trees into real Widget trees.
 // On re-render, diffs the old and new VNode trees
 // and applies minimal Widget mutations.
 // ─────────────────────────────────────────────────────
 
-import { Box, Text, Widget } from '@termui/widgets';
-import type { Style, Color } from '@termui/core';
+import { Box, Text, Widget } from '@termuijs/widgets';
+import type { Style, Color } from '@termuijs/core';
 import type { VNode, VElement, FC } from './vnode.js';
 import { isVElement, isVFragment, Fragment, flattenChildren } from './vnode.js';
 import {

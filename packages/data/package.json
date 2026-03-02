@@ -1,5 +1,5 @@
 {
-    "name": "@termui/data",
+    "name": "@termuijs/data",
     "version": "0.1.0",
     "description": "Real-time system data providers for TermUI — CPU, memory, disk, processes, network",
     "type": "module",

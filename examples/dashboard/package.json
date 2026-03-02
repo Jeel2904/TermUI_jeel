@@ -1,5 +1,5 @@
 {
-    "name": "@termui/example-dashboard",
+    "name": "@termuijs/example-dashboard",
     "version": "0.1.0",
     "private": true,
     "type": "module",
@@ -9,8 +9,8 @@
         "build": "echo 'no build needed'"
     },
     "dependencies": {
-        "@termui/core": "workspace:*",
-        "@termui/widgets": "workspace:*"
+        "@termuijs/core": "workspace:*",
+        "@termuijs/widgets": "workspace:*"
     },
     "devDependencies": {
         "tsx": "^4.19.0"

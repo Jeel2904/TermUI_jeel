@@ -1,5 +1,5 @@
 // ─────────────────────────────────────────────────────
-// @termui/data — Network interface info via Node.js os
+// @termuijs/data — Network interface info via Node.js os
 // ─────────────────────────────────────────────────────
 
 import * as os from 'node:os';

@@ -1,6 +1,6 @@
 // CommandPalette — fuzzy-search command launcher
-import { Widget } from '@termui/widgets';
-import { type Style, type Screen, mergeStyles, defaultStyle, styleToCellAttrs, getBorderChars } from '@termui/core';
+import { Widget } from '@termuijs/widgets';
+import { type Style, type Screen, mergeStyles, defaultStyle, styleToCellAttrs, getBorderChars } from '@termuijs/core';
 
 export interface Command { id: string; label: string; shortcut?: string; action: () => void; category?: string; }
 export interface CommandPaletteOptions { placeholder?: string; borderColor?: Style['fg']; activeColor?: Style['fg']; maxVisible?: number; }

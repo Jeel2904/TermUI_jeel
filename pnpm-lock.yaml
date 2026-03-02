@@ -26,10 +26,10 @@ importers:
 
   examples/dashboard:
     dependencies:
-      '@termui/core':
+      '@termuijs/core':
         specifier: workspace:*
         version: link:../../packages/core
-      '@termui/widgets':
+      '@termuijs/widgets':
         specifier: workspace:*
         version: link:../../packages/widgets
     devDependencies:
@@ -39,16 +39,16 @@ importers:
 
   examples/jsx-dashboard:
     dependencies:
-      '@termui/data':
+      '@termuijs/data':
         specifier: workspace:*
         version: link:../../packages/data
-      '@termui/jsx':
+      '@termuijs/jsx':
         specifier: workspace:*
         version: link:../../packages/jsx
-      '@termui/quick':
+      '@termuijs/quick':
         specifier: workspace:*
         version: link:../../packages/quick
-      '@termui/widgets':
+      '@termuijs/widgets':
         specifier: workspace:*
         version: link:../../packages/widgets
     devDependencies:
@@ -58,22 +58,22 @@ importers:
 
   examples/showcase:
     dependencies:
-      '@termui/core':
+      '@termuijs/core':
         specifier: workspace:*
         version: link:../../packages/core
-      '@termui/dev-server':
+      '@termuijs/dev-server':
         specifier: workspace:*
         version: link:../../packages/dev-server
-      '@termui/motion':
+      '@termuijs/motion':
         specifier: workspace:*
         version: link:../../packages/motion
-      '@termui/tss':
+      '@termuijs/tss':
         specifier: workspace:*
         version: link:../../packages/tss
-      '@termui/ui':
+      '@termuijs/ui':
         specifier: workspace:*
         version: link:../../packages/ui
-      '@termui/widgets':
+      '@termuijs/widgets':
         specifier: workspace:*
         version: link:../../packages/widgets
     devDependencies:
@@ -83,10 +83,10 @@ importers:
 
   examples/system-monitor:
     dependencies:
-      '@termui/data':
+      '@termuijs/data':
         specifier: workspace:*
         version: link:../../packages/data
-      '@termui/quick':
+      '@termuijs/quick':
         specifier: workspace:*
         version: link:../../packages/quick
     devDependencies:
@@ -99,7 +99,7 @@ importers:
 
   examples/todo-app:
     dependencies:
-      '@termui/quick':
+      '@termuijs/quick':
         specifier: workspace:*
         version: link:../../packages/quick
     devDependencies:
@@ -124,7 +124,7 @@ importers:
 
   packages/create-termui-app:
     dependencies:
-      '@termui/tss':
+      '@termuijs/tss':
         specifier: workspace:*
         version: link:../tss
     devDependencies:
@@ -149,10 +149,10 @@ importers:
 
   packages/dev-server:
     dependencies:
-      '@termui/core':
+      '@termuijs/core':
         specifier: workspace:*
         version: link:../core
-      '@termui/tss':
+      '@termuijs/tss':
         specifier: workspace:*
         version: link:../tss
     devDependencies:
@@ -165,10 +165,10 @@ importers:
 
   packages/jsx:
     dependencies:
-      '@termui/core':
+      '@termuijs/core':
         specifier: workspace:*
         version: link:../core
-      '@termui/widgets':
+      '@termuijs/widgets':
         specifier: workspace:*
         version: link:../widgets
     devDependencies:
@@ -181,7 +181,7 @@ importers:
 
   packages/motion:
     dependencies:
-      '@termui/core':
+      '@termuijs/core':
         specifier: workspace:*
         version: link:../core
     devDependencies:
@@ -194,10 +194,10 @@ importers:
 
   packages/quick:
     dependencies:
-      '@termui/core':
+      '@termuijs/core':
         specifier: workspace:*
         version: link:../core
-      '@termui/widgets':
+      '@termuijs/widgets':
         specifier: workspace:*
         version: link:../widgets
     devDependencies:
@@ -213,10 +213,10 @@ importers:
 
   packages/router:
     dependencies:
-      '@termui/core':
+      '@termuijs/core':
         specifier: workspace:*
         version: link:../core
-      '@termui/widgets':
+      '@termuijs/widgets':
         specifier: workspace:*
         version: link:../widgets
     devDependencies:
@@ -229,10 +229,10 @@ importers:
 
   packages/tss:
     dependencies:
-      '@termui/core':
+      '@termuijs/core':
         specifier: workspace:*
         version: link:../core
-      '@termui/widgets':
+      '@termuijs/widgets':
         specifier: workspace:*
         version: link:../widgets
     devDependencies:
@@ -245,10 +245,10 @@ importers:
 
   packages/ui:
     dependencies:
-      '@termui/core':
+      '@termuijs/core':
         specifier: workspace:*
         version: link:../core
-      '@termui/widgets':
+      '@termuijs/widgets':
         specifier: workspace:*
         version: link:../widgets
     devDependencies:
@@ -261,7 +261,7 @@ importers:
 
   packages/widgets:
     dependencies:
-      '@termui/core':
+      '@termuijs/core':
         specifier: workspace:*
         version: link:../core
     devDependencies:

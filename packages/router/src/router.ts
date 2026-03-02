@@ -2,7 +2,7 @@
 // Router — manages screen navigation
 // ─────────────────────────────────────────────────────
 
-import { EventEmitter } from '@termui/core';
+import { EventEmitter } from '@termuijs/core';
 import { type Route, type RouteMatch, type RouteParams, matchRoute, compilePattern } from './route.js';
 
 export interface RouterEvents {

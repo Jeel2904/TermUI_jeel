@@ -7,9 +7,9 @@
 // layout positions (height:1), we supplement them with explicit
 // Text indicators that make state changes clearly visible.
 
-import { Widget, Box, Text } from '@termui/widgets';
-import { Select, MultiSelect, Tree, Divider } from '@termui/ui';
-import type { Screen } from '@termui/core';
+import { Widget, Box, Text } from '@termuijs/widgets';
+import { Select, MultiSelect, Tree, Divider } from '@termuijs/ui';
+import type { Screen } from '@termuijs/core';
 
 // ── Helper: themed option labels ──
 const SELECT_OPTIONS = [
@@ -37,11 +37,11 @@ const TREE_DATA = [
                 label: '📦 packages',
                 expanded: true,
                 children: [
-                    { label: '@termui/core' },
-                    { label: '@termui/widgets' },
-                    { label: '@termui/ui' },
-                    { label: '@termui/tss' },
-                    { label: '@termui/motion' },
+                    { label: '@termuijs/core' },
+                    { label: '@termuijs/widgets' },
+                    { label: '@termuijs/ui' },
+                    { label: '@termuijs/tss' },
+                    { label: '@termuijs/motion' },
                 ],
             },
             {

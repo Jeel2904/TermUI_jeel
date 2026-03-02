@@ -1,6 +1,6 @@
 // Full dashboard verification — tests the rendering pipeline end to end
 
-import { Screen, computeLayout, renderFallback } from '@termui/core';
+import { Screen, computeLayout, renderFallback } from '@termuijs/core';
 import {
     Box,
     Text,
@@ -8,7 +8,7 @@ import {
     Spinner,
     Table,
     Widget,
-} from '@termui/widgets';
+} from '@termuijs/widgets';
 
 class Dashboard extends Widget {
     constructor() {

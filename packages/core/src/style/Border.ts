@@ -1,5 +1,5 @@
 // ─────────────────────────────────────────────────────
-// @termui/core — Border styles and rendering
+// @termuijs/core — Border styles and rendering
 // ─────────────────────────────────────────────────────
 
 /**

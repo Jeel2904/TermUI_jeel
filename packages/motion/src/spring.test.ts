@@ -1,5 +1,5 @@
 // ─────────────────────────────────────────────────────
-// @termui/motion — Tests for Spring Physics
+// @termuijs/motion — Tests for Spring Physics
 // ─────────────────────────────────────────────────────
 
 import { describe, it, expect } from 'vitest';

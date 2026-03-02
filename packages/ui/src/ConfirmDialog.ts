@@ -1,6 +1,6 @@
 // ConfirmDialog — yes/no prompt overlay
-import { Widget } from '@termui/widgets';
-import { type Style, type Screen, mergeStyles, defaultStyle, styleToCellAttrs, getBorderChars } from '@termui/core';
+import { Widget } from '@termuijs/widgets';
+import { type Style, type Screen, mergeStyles, defaultStyle, styleToCellAttrs, getBorderChars } from '@termuijs/core';
 
 export interface ConfirmDialogOptions {
     message: string;

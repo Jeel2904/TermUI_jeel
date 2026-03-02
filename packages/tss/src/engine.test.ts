@@ -1,5 +1,5 @@
 // ─────────────────────────────────────────────────────
-// @termui/tss — Tests for Theme Engine
+// @termuijs/tss — Tests for Theme Engine
 // ─────────────────────────────────────────────────────
 
 import { describe, it, expect, vi } from 'vitest';

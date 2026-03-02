@@ -1,5 +1,5 @@
 // ─────────────────────────────────────────────────────
-// @termui/data — HTTP health check / ping via fetch
+// @termuijs/data — HTTP health check / ping via fetch
 // ─────────────────────────────────────────────────────
 
 export interface HealthResult {

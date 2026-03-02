@@ -1,8 +1,8 @@
 // ─────────────────────────────────────────────────────
-// @termui/widgets — List widget (selectable)
+// @termuijs/widgets — List widget (selectable)
 // ─────────────────────────────────────────────────────
 
-import { type Screen, type Style, styleToCellAttrs, stringWidth, truncate } from '@termui/core';
+import { type Screen, type Style, styleToCellAttrs, stringWidth, truncate } from '@termuijs/core';
 import { Widget } from '../base/Widget.js';
 
 export interface ListItem {

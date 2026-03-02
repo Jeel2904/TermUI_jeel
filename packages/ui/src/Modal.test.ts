@@ -1,5 +1,5 @@
 // ─────────────────────────────────────────────────────
-// @termui/ui — Tests for Modal component
+// @termuijs/ui — Tests for Modal component
 // ─────────────────────────────────────────────────────
 
 import { describe, it, expect } from 'vitest';

@@ -1,5 +1,5 @@
 // ─────────────────────────────────────────────────────
-// @termui/core — Mouse event parser (SGR mode)
+// @termuijs/core — Mouse event parser (SGR mode)
 // ─────────────────────────────────────────────────────
 
 import type { MouseEvent, MouseButton, MouseEventType } from '../events/types.js';

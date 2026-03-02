@@ -1,5 +1,5 @@
 // ─────────────────────────────────────────────────────
-// @termui/core — Tests for MouseParser
+// @termuijs/core — Tests for MouseParser
 // ─────────────────────────────────────────────────────
 
 import { describe, it, expect } from 'vitest';

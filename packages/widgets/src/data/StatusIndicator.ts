@@ -1,8 +1,8 @@
 // ─────────────────────────────────────────────────────
-// @termui/widgets — StatusIndicator widget
+// @termuijs/widgets — StatusIndicator widget
 // ─────────────────────────────────────────────────────
 
-import { type Screen, type Style, type Color, styleToCellAttrs } from '@termui/core';
+import { type Screen, type Style, type Color, styleToCellAttrs } from '@termuijs/core';
 import { Widget } from '../base/Widget.js';
 
 export interface StatusIndicatorOptions {

@@ -1,7 +1,7 @@
 // Debug script: logs every key event to see what InputParser emits
-import { App } from '@termui/core';
-import { Box, Text } from '@termui/widgets';
-import type { Screen } from '@termui/core';
+import { App } from '@termuijs/core';
+import { Box, Text } from '@termuijs/widgets';
+import type { Screen } from '@termuijs/core';
 import * as fs from 'node:fs';
 
 class DebugApp extends Box {

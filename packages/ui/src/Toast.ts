@@ -1,6 +1,6 @@
 // Toast — auto-dismiss notification
-import { Widget } from '@termui/widgets';
-import { type Screen, mergeStyles, defaultStyle, styleToCellAttrs } from '@termui/core';
+import { Widget } from '@termuijs/widgets';
+import { type Screen, mergeStyles, defaultStyle, styleToCellAttrs } from '@termuijs/core';
 
 export type ToastType = 'info' | 'success' | 'warning' | 'error';
 export interface ToastMessage { text: string; type: ToastType; expireAt: number; }

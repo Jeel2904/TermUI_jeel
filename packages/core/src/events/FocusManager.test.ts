@@ -1,5 +1,5 @@
 // ─────────────────────────────────────────────────────
-// @termui/core — Tests for FocusManager
+// @termuijs/core — Tests for FocusManager
 // ─────────────────────────────────────────────────────
 
 import { describe, it, expect, vi } from 'vitest';

@@ -15,7 +15,7 @@
         "dev": "tsup --watch"
     },
     "dependencies": {
-        "@termui/tss": "workspace:*"
+        "@termuijs/tss": "workspace:*"
     },
     "devDependencies": {
         "tsup": "^8.0.0",

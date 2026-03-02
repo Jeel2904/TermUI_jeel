@@ -1,6 +1,6 @@
 // Spacer — flexible empty space
-import { Widget } from '@termui/widgets';
-import { type Screen, mergeStyles, defaultStyle } from '@termui/core';
+import { Widget } from '@termuijs/widgets';
+import { type Screen, mergeStyles, defaultStyle } from '@termuijs/core';
 
 export class Spacer extends Widget {
     constructor(grow: number = 1) {

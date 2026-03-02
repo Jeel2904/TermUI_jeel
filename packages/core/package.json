@@ -1,5 +1,5 @@
 {
-    "name": "@termui/core",
+    "name": "@termuijs/core",
     "version": "0.1.0",
     "description": "Core engine for TermUI — terminal adapter, renderer, layout, events, styling",
     "type": "module",

@@ -1,5 +1,5 @@
 // ─────────────────────────────────────────────────────
-// @termui/ui — Tests for Select component
+// @termuijs/ui — Tests for Select component
 // ─────────────────────────────────────────────────────
 
 import { describe, it, expect, vi } from 'vitest';

@@ -1,5 +1,5 @@
 // ─────────────────────────────────────────────────────
-// @termui/data — Memory metrics via Node.js os module
+// @termuijs/data — Memory metrics via Node.js os module
 // ─────────────────────────────────────────────────────
 
 import * as os from 'node:os';

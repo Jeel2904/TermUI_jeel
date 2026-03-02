@@ -1,5 +1,5 @@
 // ─────────────────────────────────────────────────────
-// @termui/tss — Tests for Built-in Themes
+// @termuijs/tss — Tests for Built-in Themes
 // ─────────────────────────────────────────────────────
 
 import { describe, it, expect } from 'vitest';

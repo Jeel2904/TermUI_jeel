@@ -2,9 +2,9 @@
 // Animations Tab — Spring physics & transition demos
 // ─────────────────────────────────────────────────────
 
-import { Widget, Box, Text, ProgressBar } from '@termui/widgets';
-import { SPRING_PRESETS, stepSpring, type SpringState, type SpringConfig } from '@termui/motion';
-import type { Screen } from '@termui/core';
+import { Widget, Box, Text, ProgressBar } from '@termuijs/widgets';
+import { SPRING_PRESETS, stepSpring, type SpringState, type SpringConfig } from '@termuijs/motion';
+import type { Screen } from '@termuijs/core';
 
 interface AnimDemo {
     name: string;
