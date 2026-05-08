@@ -165,6 +165,10 @@ export class InputParser {
             }
             // Might be incomplete mouse sequence — wait for more data
             if (seq.length < 20) { // safety cap
+                if (this._escapeTimeout) {
+                    clearTimeout(this._escapeTimeout);
+                    this._escapeTimeout = null;
+                }
                 this._escapeTimeout = setTimeout(() => {
                     this._escapeBuffer = '';
                     this._escapeTimeout = null;
@@ -213,6 +217,10 @@ export class InputParser {
         }
 
         // Wait for more bytes (might be an incomplete sequence)
+        if (this._escapeTimeout) {
+            clearTimeout(this._escapeTimeout);
+            this._escapeTimeout = null;
+        }
         this._escapeTimeout = setTimeout(() => {
             // Timeout — emit as unknown escape and clear
             this._escapeBuffer = '';
