@@ -19,6 +19,8 @@ export interface LayoutNode {
     children: LayoutNode[];
     /** Computed position and size — filled in by computeLayout() */
     computed: Rect;
+    /** Dirty flag — true when this node needs to be re-laid-out. Foundation for layout caching. */
+    _dirty: boolean;
 }
 
 /**
@@ -30,6 +32,7 @@ export function createLayoutNode(id: string, style: Style, children: LayoutNode[
         style,
         children,
         computed: { x: 0, y: 0, width: 0, height: 0 },
+        _dirty: true,
     };
 }
 
@@ -73,7 +76,10 @@ function layoutNode(node: LayoutNode, availWidth: number, availHeight: number, p
         node.computed.height = nodeHeight;
     }
 
-    if (node.children.length === 0) return;
+    if (node.children.length === 0) {
+        node._dirty = false;
+        return;
+    }
 
     const nodeWidth = node.computed.width;
     const nodeHeight = node.computed.height;
@@ -233,6 +239,9 @@ function layoutNode(node: LayoutNode, availWidth: number, availHeight: number, p
         // Recursively layout children — dimensions already set by parent
         layoutNode(info.node, info.node.computed.width, info.node.computed.height, true);
     }
+
+    // Mark this node clean after layout is complete (used by future caching logic)
+    node._dirty = false;
 }
 
 /**
