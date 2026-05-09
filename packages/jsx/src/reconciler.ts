@@ -6,7 +6,10 @@
 // and applies minimal Widget mutations.
 // ─────────────────────────────────────────────────────
 
-import { Box, Text, Widget, ProgressBar, Grid, Skeleton } from '@termuijs/widgets';
+import {
+    Box, Text, Widget, ProgressBar, Grid, Skeleton,
+    StatusMessage, Banner, Card, KeyValue, Center, ScrollView, Sidebar,
+} from '@termuijs/widgets';
 import type { Style, Color } from '@termuijs/core';
 import { parseColor } from '@termuijs/core';
 import type { VNode, VElement, FC } from './vnode.js';
@@ -123,6 +126,64 @@ function createIntrinsicWidget(tag: string, props: Record<string, any>, children
                 variant:    props.variant,
                 intervalMs: props.intervalMs,
                 chars:      props.chars,
+            });
+        }
+
+        case 'statusmessage': {
+            const content = children
+                .map(c => (c == null || typeof c === 'boolean') ? '' : String(c))
+                .join('') || props.message || '';
+            return new StatusMessage(content, { height: 1, ...style }, {
+                variant: props.variant,
+                icon:    props.icon,
+            });
+        }
+
+        case 'banner': {
+            return new Banner({ ...style }, {
+                variant: props.variant,
+                title:   props.title,
+                body:    props.body,
+            });
+        }
+
+        case 'card': {
+            return new Card({ ...style }, {
+                title:       props.title,
+                borderColor: props.borderColor ? parseColorProp(props.borderColor) : undefined,
+            });
+        }
+
+        case 'keyvalue': {
+            const pairs = props.pairs ?? props.data ?? {};
+            return new KeyValue(pairs, { ...style }, {
+                separator:  props.separator,
+                keyColor:   props.keyColor   ? parseColorProp(props.keyColor)   : undefined,
+                valueColor: props.valueColor ? parseColorProp(props.valueColor) : undefined,
+            });
+        }
+
+        case 'center': {
+            return new Center({ ...style }, {
+                horizontal: props.horizontal !== false,
+                vertical:   props.vertical !== false,
+            });
+        }
+
+        case 'scrollview': {
+            return new ScrollView({ ...style }, {
+                contentHeight: props.contentHeight,
+                showScrollbar: props.showScrollbar !== false,
+            });
+        }
+
+        case 'sidebar': {
+            const items = props.items ?? [];
+            return new Sidebar(items, { ...style }, {
+                collapsed:      props.collapsed,
+                collapsedWidth: props.collapsedWidth,
+                activeColor:    props.activeColor ? parseColorProp(props.activeColor) : undefined,
+                badgeColor:     props.badgeColor  ? parseColorProp(props.badgeColor)  : undefined,
             });
         }
 

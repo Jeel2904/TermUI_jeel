@@ -53,6 +53,14 @@ export type { Bar, BarGroup, BarChartDirection, BarChartOptions } from './data/B
 // ── Layout Widgets ────────────────────────────────────
 export { Grid } from './layout/Grid.js';
 export type { GridOptions } from './layout/Grid.js';
+export { ScrollView } from './layout/ScrollView.js';
+export type { ScrollViewOptions } from './layout/ScrollView.js';
+export { Center } from './layout/Center.js';
+export type { CenterOptions } from './layout/Center.js';
+export { Card } from './layout/Card.js';
+export type { CardOptions } from './layout/Card.js';
+export { Columns } from './layout/Columns.js';
+export type { ColumnsOptions } from './layout/Columns.js';
 
 // ── Feedback Widgets ──────────────────────────────────
 export { ProgressBar } from './feedback/ProgressBar.js';
@@ -65,3 +73,25 @@ export { Scrollbar } from './feedback/Scrollbar.js';
 export type { ScrollbarOrientation, ScrollbarOptions } from './feedback/Scrollbar.js';
 export { Skeleton } from './feedback/Skeleton.js';
 export type { SkeletonOptions } from './feedback/Skeleton.js';
+export { StatusMessage } from './feedback/StatusMessage.js';
+export type { StatusMessageOptions, StatusVariant } from './feedback/StatusMessage.js';
+export { Banner } from './feedback/Banner.js';
+export type { BannerOptions } from './feedback/Banner.js';
+
+// ── New Data Widgets ──────────────────────────────────
+export { KeyValue } from './data/KeyValue.js';
+export type { KeyValuePair, KeyValueOptions } from './data/KeyValue.js';
+export { Sidebar } from './data/Sidebar.js';
+export type { SidebarItem, SidebarOptions } from './data/Sidebar.js';
+export { LineChart } from './data/LineChart.js';
+export type { LineChartOptions } from './data/LineChart.js';
+export { HeatMap } from './data/HeatMap.js';
+export type { HeatMapOptions } from './data/HeatMap.js';
+export { Definition } from './data/Definition.js';
+export type { DefinitionPair, DefinitionOptions } from './data/Definition.js';
+
+// ── New Display Widgets ───────────────────────────────
+export { BigText } from './display/BigText.js';
+export type { BigTextOptions } from './display/BigText.js';
+export { Gradient } from './display/Gradient.js';
+export type { GradientOptions } from './display/Gradient.js';
