@@ -1,4 +1,5 @@
 import { describe, it, expect, beforeEach, afterEach, vi } from 'vitest';
+import { tokensToTSS } from './tokens.js';
 
 describe('ThemeTokens', () => {
   const requiredKeys = [
@@ -61,5 +62,20 @@ describe('ThemeTokens', () => {
     vi.resetModules();
     const { systemTheme, defaultDark } = await import('./tokens.ts');
     expect(systemTheme).toEqual(defaultDark);
+  });
+});
+
+describe('tokensToTSS', () => {
+  it('produces a valid @theme block', () => {
+    const result = tokensToTSS('dracula', {
+      primary: '#bd93f9',
+      background: '#282a36',
+    } as any);
+    expect(result).toBe('@theme dracula {\n  --primary: #bd93f9;\n  --background: #282a36;\n}');
+  });
+
+  it('handles empty tokens', () => {
+    const result = tokensToTSS('empty', {} as any);
+    expect(result).toBe('@theme empty {\n\n}');
   });
 });

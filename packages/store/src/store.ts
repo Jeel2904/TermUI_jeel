@@ -50,20 +50,28 @@ const _batchStores = new Map<Set<any>, { prevState: any; nextState: any }>();
  */
 export function batch(fn: () => void): void {
     _batchDepth++;
+    let threw = false;
     try {
         fn();
+    } catch (err) {
+        threw = true;
+        throw err;
     } finally {
         _batchDepth--;
         if (_batchDepth === 0) {
-            queueMicrotask(() => {
-                const stores = Array.from(_batchStores.entries());
-                _batchStores.clear();
-                for (const [listeners, { prevState, nextState }] of stores) {
-                    for (const listener of listeners) {
-                        listener(nextState, prevState);
+            if (threw) {
+                _batchStores.clear(); // Don't notify listeners with partial state
+            } else {
+                queueMicrotask(() => {
+                    const stores = Array.from(_batchStores.entries());
+                    _batchStores.clear();
+                    for (const [listeners, { prevState, nextState }] of stores) {
+                        for (const listener of listeners) {
+                            listener(nextState, prevState);
+                        }
                     }
-                }
-            });
+                });
+            }
         }
     }
 }

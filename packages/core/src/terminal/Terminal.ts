@@ -209,7 +209,7 @@ export class Terminal {
 
         this._uncaughtExceptionHandler = (err: Error) => {
             this.restore();
-            throw err;
+            process.exit(1);
         };
         this._unhandledRejectionHandler = () => {
             this.restore();
