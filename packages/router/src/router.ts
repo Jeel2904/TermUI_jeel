@@ -17,9 +17,14 @@ function defaultErrorScreen(err: Error): VNode {
     } as any;
 }
 
+export interface NavigateEvent {
+    match: RouteMatch;
+    screen: VNode;
+}
+
 export interface RouterEvents {
-    navigate: RouteMatch;
-    back: RouteMatch | null;
+    navigate: NavigateEvent;
+    back: NavigateEvent | null;
     error: Error;
 }
 
@@ -55,6 +60,14 @@ export class Router {
         for (const r of routes) this.addRoute(r.path, r.component, r.layout);
     }
 
+    private _wrapScreen(match: RouteMatch): VNode {
+        return createElement(
+            ErrorBoundary,
+            { fallback: defaultErrorScreen },
+            createElement(match.route.component, match.params),
+        );
+    }
+
     /** Navigate to a path */
     push(path: string): void {
         const match = matchRoute(path, this._routes);
@@ -69,11 +82,8 @@ export class Router {
         }
         this._currentMatch = match;
         unmountAll();
-        const wrapped = createElement(ErrorBoundary,
-            { fallback: (err: Error) => defaultErrorScreen(err) },
-            createElement(match.route.component, match.params)
-        );
-        this.events.emit('navigate', { ...match, component: wrapped } as any);
+        const screen = this._wrapScreen(match);
+        this.events.emit('navigate', { match, screen });
     }
 
     /** Replace current path */
@@ -90,11 +100,8 @@ export class Router {
         }
         this._currentMatch = match;
         unmountAll();
-        const wrapped = createElement(ErrorBoundary,
-            { fallback: (err: Error) => defaultErrorScreen(err) },
-            createElement(match.route.component, match.params)
-        );
-        this.events.emit('navigate', { ...match, component: wrapped } as any);
+        const screen = this._wrapScreen(match);
+        this.events.emit('navigate', { match, screen });
     }
 
     /** Go back in history */
@@ -104,13 +111,10 @@ export class Router {
         const prevPath = this._history[this._history.length - 1];
         const match = prevPath ? matchRoute(prevPath, this._routes) : null;
         this._currentMatch = match;
-        unmountAll();
         if (match) {
-            const wrapped = createElement(ErrorBoundary,
-                { fallback: (err: Error) => defaultErrorScreen(err) },
-                createElement(match.route.component, match.params)
-            );
-            this.events.emit('back', { ...match, component: wrapped } as any);
+            unmountAll();
+            const screen = this._wrapScreen(match);
+            this.events.emit('back', { match, screen });
         } else {
             this.events.emit('back', null);
         }
