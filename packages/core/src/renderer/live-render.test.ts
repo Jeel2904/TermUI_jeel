@@ -24,44 +24,7 @@ interface FakeStdin {
 }
 
 describe('LiveRender', () => {
-    it('does not emit clearScreen sequences', () => {
-        const fakeStdout: FakeStdout  = {
-            writes: '',
-            columns: 80,
-            rows: 24,
-            isTTY: true,
-            write(s: string) {
-                this.writes += s;
-            },
-            on() {},
-            off() {},
-        };
-
-        const fakeStdin: FakeStdin = {
-            isTTY: true,
-            setRawMode() {},
-            resume() {},
-            pause() {},
-            on() {},
-            off() {},
-        };
-
-        const terminal = new Terminal({
-            stdout: fakeStdout as unknown as NodeJS.WriteStream,
-            stdin: fakeStdin as unknown as NodeJS.ReadStream,
-        });
-
-        const screen = new Screen(80, 24);
-        const live = new LiveRender(terminal, screen);
-
-        live.render('hello');
-        live.render('world');
-
-        expect(fakeStdout.writes).not.toContain('\x1b[2J');
-
-        terminal.restore();
-    });
-    it('emits clearLine sequences based on previous render height', () => {
+   function createTestContext() {
     const fakeStdout: FakeStdout = {
         writes: '',
         columns: 80,
@@ -84,12 +47,32 @@ describe('LiveRender', () => {
     };
 
     const terminal = new Terminal({
-         stdout: fakeStdout as unknown as NodeJS.WriteStream,
-            stdin: fakeStdin as unknown as NodeJS.ReadStream,
+        stdout: fakeStdout as unknown as NodeJS.WriteStream,
+        stdin: fakeStdin as unknown as NodeJS.ReadStream,
     });
 
     const screen = new Screen(80, 24);
     const live = new LiveRender(terminal, screen);
+
+    return {
+        fakeStdout,
+        fakeStdin,
+        terminal,
+        screen,
+        live,
+    };
+}
+    it('does not emit clearScreen sequences', () => {
+        const { fakeStdout, terminal, live } = createTestContext();
+        live.render('hello');
+        live.render('world');
+
+        expect(fakeStdout.writes).not.toContain('\x1b[2J');
+
+        terminal.restore();
+    });
+    it('emits clearLine sequences based on previous render height', () => {
+    const { fakeStdout, terminal, live } = createTestContext();
 
     live.render('A\nB\nC');
     fakeStdout.writes = '';
@@ -105,35 +88,7 @@ describe('LiveRender', () => {
     });
 
     it('moves cursor up by previous render height', () => {
-    const fakeStdout: FakeStdout= {
-        writes: '',
-        columns: 80,
-        rows: 24,
-        isTTY: true,
-        write(s: string) {
-            this.writes += s;
-        },
-        on() {},
-        off() {},
-    };
-
-    const fakeStdin: FakeStdin = {
-        isTTY: true,
-        setRawMode() {},
-        resume() {},
-        pause() {},
-        on() {},
-        off() {},
-    };
-
-    const terminal = new Terminal({
-        stdout: fakeStdout as unknown as NodeJS.WriteStream,
-        stdin: fakeStdin as unknown as NodeJS.ReadStream,
-    });
-
-    const screen = new Screen(80, 24);
-    const live = new LiveRender(terminal, screen);
-  
+    const { fakeStdout, terminal, live } = createTestContext();
 
     live.render('A\nB\nC');
     fakeStdout.writes = '';
@@ -145,35 +100,7 @@ describe('LiveRender', () => {
     terminal.restore();
     });
     it('stores zero height for empty frames', () => {
-    const fakeStdout: FakeStdout = {
-        writes: '',
-        columns: 80,
-        rows: 24,
-        isTTY: true,
-        write(s: string) {
-            this.writes += s;
-        },
-        on() {},
-        off() {},
-    };
-
-    const fakeStdin: FakeStdin = {
-        isTTY: true,
-        setRawMode() {},
-        resume() {},
-        pause() {},
-        on() {},
-        off() {},
-    };
-
-    const terminal = new Terminal({
-        stdout: fakeStdout as unknown as NodeJS.WriteStream,
-        stdin: fakeStdin as unknown as NodeJS.ReadStream,
-    });
-
-    const screen = new Screen(80, 24);
-    const live = new LiveRender(terminal, screen);
-
+    const { terminal, screen, live } = createTestContext();
     live.render('');
 
     expect(screen.lastRenderedHeight).toBe(0);

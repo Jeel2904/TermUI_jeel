@@ -1,26 +1,33 @@
-import type { Terminal } from '../terminal/Terminal.js';
-import { moveUp, clearLine } from '../utils/ansi.js';
-import type { Screen } from '../terminal/Screen.js';
+import type { Terminal } from "../terminal/Terminal.js";
+import { moveUp, clearLine } from "../utils/ansi.js";
+import type { Screen } from "../terminal/Screen.js";
 
 export class LiveRender {
-
     constructor(
         private readonly terminal: Terminal,
-         private readonly screen: Screen
+        private readonly screen: Screen,
     ) {}
 
-      private getHeight(frame: string): number {
+    private getHeight(frame: string): number {
         if (frame.length === 0) {
             return 0;
         }
 
-        return frame.split('\n').length;
+        return frame.split("\n").length;
     }
 
-    render(frame: string): void {
-        let output = '';
+  /**
+   * Renders a serialized screen buffer.
+   *
+   * Widgets render into a Screen object first.
+   * Callers should serialize the Screen contents into a string
+   * before passing it to LiveRender.render().
+   */
 
-         const previousHeight = this.screen.lastRenderedHeight;
+    render(frame: string): void {
+        let output = "";
+
+        const previousHeight = this.screen.lastRenderedHeight;
 
         if (previousHeight > 0) {
             output += moveUp(previousHeight);
@@ -29,12 +36,10 @@ export class LiveRender {
                 output += clearLine;
 
                 if (i < previousHeight - 1) {
-                    output += '\n';
+                    output += "\n";
                 }
             }
-
-            output += '\r';
-               
+            output += "\r";
         }
 
         output += frame;
