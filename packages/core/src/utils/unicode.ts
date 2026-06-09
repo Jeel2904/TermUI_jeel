@@ -2,6 +2,7 @@
 // @termuijs/core — Unicode string width utilities
 // ─────────────────────────────────────────────────────
 
+import { stripAnsiControl } from './ansi.js';
 
 /**
  * Check if a code point is a CJK (East Asian Wide/Fullwidth) character.
@@ -138,8 +139,13 @@ export function stringWidth(str: string): number {
 /**
  * Truncate a string to the given visual width, preserving ANSI codes.
  * Appends an ellipsis character if truncated.
+ *
+ * Security: strips ANSI control sequences from the input before truncating to
+ * prevent escape injection via user-supplied or file-read strings.
  */
 export function truncate(str: string, maxWidth: number, ellipsis = '…'): string {
+    // Strip dangerous ANSI/control characters before measuring or rendering.
+    str = stripAnsiControl(str);
     if (maxWidth <= 0) return '';
     const strW = stringWidth(str);
     if (strW <= maxWidth) return str;
