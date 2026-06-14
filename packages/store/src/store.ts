@@ -225,8 +225,7 @@ export function createStore<T extends object>(
 ): UseStore<T>;
 
 export function createStore<T extends object>(
-    // Using any to accept both StateCreator<T> function and plain T object (overloaded below)
-    creator: any,
+    creator: any, // overloaded: accepts StateCreator<T> function or plain T object
     options?: StoreOptions<T>
 ): UseStore<T> {
     const listeners = new Set<Listener<T>>();
@@ -262,8 +261,7 @@ export function createStore<T extends object>(
                 if (!fs.existsSync(dir)) {
                     fs.mkdirSync(dir, { recursive: true });
                 }
-                // Using any because we filter out functions and only persist serializable data
-                const dataToSave: any = {};
+                const dataToSave: Record<string, unknown> = {};
                 for (const [key, val] of Object.entries(state)) {
                     if (typeof val !== 'function') {
                         dataToSave[key] = val;
