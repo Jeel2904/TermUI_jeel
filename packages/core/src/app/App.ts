@@ -361,15 +361,28 @@ export class App {
             }
 
             try {
-                // Skip full render pass if neither the widget tree nor overlay
-                // layers have reported any changes. Done inside the deferred
-                // callback so the dirty check and the _isRenderPending guard
-                // are never racy with concurrent requestRender() calls.
-                if (this._rootWidget.isDirty === false && !this.layers.hasDirtyLayers()) {
+                // Sync screen buffer dimensions with the terminal. The
+                // Terminal's resize handler updates _cols/_rows immediately
+                // on the raw 'resize' event, but the App's resize handler
+                // (which calls screen.resize / layers.resize) runs after a
+                // debounce. If a render tick falls in that window the screen
+                // buffers would be stale, causing out-of-bounds writes and
+                // corrupted terminal output. This guard prevents that.
+                const dimsChanged = this.screen.cols !== this.terminal.cols
+                                 || this.screen.rows !== this.terminal.rows;
+                if (dimsChanged) {
+                    this.screen.resize(this.terminal.cols, this.terminal.rows);
+                    this.screen.invalidate();
+                    this.layers.resize(this.terminal.cols, this.terminal.rows);
+                }
+
+                // Skip full render pass if neither the widget tree, overlay
+                // layers, nor terminal dimensions have changed.
+                if (this._rootWidget.isDirty === false && !this.layers.hasDirtyLayers() && !dimsChanged) {
                     return;
                 }
 
-                if (this._rootWidget.isDirty !== false) {
+                if (this._rootWidget.isDirty !== false || dimsChanged) {
                     // Compute layout
                     const layoutRoot = this._rootWidget.getLayoutNode();
                     computeLayout(layoutRoot, this.terminal.cols, this.terminal.rows);
